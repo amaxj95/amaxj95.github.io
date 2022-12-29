@@ -1,13 +1,15 @@
 package main
 
-import "github.com/gofiber/fiber/v2"
+import (
+    "github.com/gofiber/fiber/v2"
+    "github.com/amaxj95/pgdoc_connect/pgdoc_connect/database"
+)
 
 func main() {
+    database.ConnectDb()
     app := fiber.New()
 
-    app.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Wassup World")
-    })
+    setupRoutes(app)
 
     app.Listen(":3000")
 }
