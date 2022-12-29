@@ -4,6 +4,6 @@ import "gorm.io/gorm"
 
 type Crunchy_prereq struct {
     gorm.Model
-    kubectl string `json:"kubectl version --short" gorm:"text;not null;default:null"`
-    git   string    `json:"git --version" gorm:"text;not null;default:null"'
+    Question string `json:"question" gorm:"text;not null;default:null`
+    Answer   string `json:"answer" gorm:"text;not null;default:null`
 }
