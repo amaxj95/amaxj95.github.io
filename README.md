@@ -11,13 +11,7 @@
     -- Prior to doing so, you may need to create a volume mount using 
     docker volume create pgdoc_connect
     
-### How it was built
-
-    1. install android studio <br>
-    https://developer.android.com/studio/install
+### Repos & Apps
+[Smart Pay](https://github.com/amaxj95/smart_pay)
     
-PGAdmin4 Enter here - http://127.0.0.1:5050/browser/?plain=1
 
-### What its for
-
-### Demo
