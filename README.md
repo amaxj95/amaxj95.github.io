@@ -6,4 +6,4 @@ Mobile Apps <br>
   
 Web Applications and infrastructure services <br> 
   - [Junk-Ez](https://junk-ez.net/)
-  - [Remote-Online-Notarization](https://link.depay.com/7aH38vQEi3JGoyRfCHUiYd)]
+  - [Remote-Online-Notarization](https://link.depay.com/7aH38vQEi3JGoyRfCHUiYd)
