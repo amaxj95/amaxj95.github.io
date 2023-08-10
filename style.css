@@ -1,0 +1,41 @@
+<style>
+    @keyframes slideInLeft {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+    header {
+      animation: 1s ease-out 0s 1 slideInLeft;
+      background: #000b40;
+      padding: 40px;
+    }
+    footer {
+      animation: 1s ease-out 0s 1 slideInRight;
+      background: #000b40;
+      padding: 40px;
+    }
+    div {
+        height: 400px;
+        width: 100%;
+        background-image: url("./images/empty-inside-blank-cargo-container-truck-abstract-dark-space-background_36860-1040.avif");
+        background-repeat: no-repeat, no-repeat;
+        background-position: right, left;  
+    }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+      background-image: url('./images/wx_digital-container-ship_blog-header.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    a {
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 10px;
+      color: #fff;
+    }
+  </style>
