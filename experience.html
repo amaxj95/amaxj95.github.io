@@ -45,7 +45,25 @@
     </header>
     
     <footer>
+        <div class="container mt-3">
+            <div class="row">
+              <div class="col-sm-6 bg-primary text-white p-3">
+                <script  async
+                    src="https://js.stripe.com/v3/buy-button.js">
+                </script>
         
+                <stripe-buy-button 
+                    buy-button-id="buy_btn_1NdKJVHglFc3nSlIcWm9UU8q"
+                    publishable-key="pk_live_51NIHwLHglFc3nSlItBl1H5913wr72xwCBRTAJbKkCF869poeJfhIKkcLwk2t8vyRiXKdR74DPyty66hNhRINjALf00QG0OVIaj"
+                    class="w3-center"
+                >
+                </stripe-buy-button>
+              </div>
+              <div class="col-sm-6 bg-dark text-white p-3">
+                Sed ut perspiciatis...
+              </div>
+            </div>
+          </div>
     </footer>
 </body>
 </html>
