@@ -2,8 +2,11 @@
 <html>
 <head>
 <title>Aus10's Portfolio</title>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <style>
     @keyframes slideInLeft {
       0% {
@@ -42,25 +45,66 @@
         <a href="https://amaxj95.github.io/services.html">Services</a>
         <a href="https://amaxj95.github.io/experience.html">Experience</a>
         <a href="https://amaxj95.github.io/Tools.html">Tools</a>
-    </header>
+    </header>   
+      <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
     
-    <footer>
-        <div class="container mt-3">
-            <div class="row">
-              <div class="col-sm-6 bg-primary text-white p-3">
-                <script  async
-                    src="https://js.stripe.com/v3/buy-button.js">
-                </script>
-        
-                <stripe-buy-button 
-                    buy-button-id="buy_btn_1NdKJVHglFc3nSlIcWm9UU8q"
-                    publishable-key="pk_live_51NIHwLHglFc3nSlItBl1H5913wr72xwCBRTAJbKkCF869poeJfhIKkcLwk2t8vyRiXKdR74DPyty66hNhRINjALf00QG0OVIaj"
-                    class="w3-center"
-                >
-                </stripe-buy-button>
-              </div>
-            </div>
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>    
+    <script  async
+        src="https://js.stripe.com/v3/buy-button.js">
+        DePayWidgets.Payment({
+            integration: '952567b0-c92a-42c7-bcfd-9074d271eb61',
+            accept:[
+            {
+                blockchain: 'ethereum',
+                amount: 25,
+                token: '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48',
+                receiver: '0x0570A360B3972B2ce54A9AeF7cdEf8733C80dBeF'
+            }, {
+                blockchain: 'ethereum',
+                amount: 4025186901.968143,
+                token: '0xacf1FD71B160cc82446dB9F213B94495Ee70Af30',
+                receiver: '0x0570A360B3972B2ce54A9AeF7cdEf8733C80dBeF'
+            }
+            ]
+        })
+    </script>
+<footer>
+    <div class="container mt-3">
+        <div class="row">
+          <div class="col-sm-6 bg-primary text-white p-3">
+            <script  async
+                src="https://js.stripe.com/v3/buy-button.js">
+            </script>
+    
+            <stripe-buy-button 
+                buy-button-id="buy_btn_1NdKJVHglFc3nSlIcWm9UU8q"
+                publishable-key="pk_live_51NIHwLHglFc3nSlItBl1H5913wr72xwCBRTAJbKkCF869poeJfhIKkcLwk2t8vyRiXKdR74DPyty66hNhRINjALf00QG0OVIaj"
+                class="w3-center"
+            >
+            </stripe-buy-button>
           </div>
-    </footer>
-    </body>
+        </div>
+      </div>
+</footer>
+</body>
 </html>
