@@ -24,7 +24,7 @@
         background-repeat: no-repeat, no-repeat;
         background-position: right, left;  
     }
-    h1 {
+    h2 {
         animation: 1s ease-out 0s 1 slideInLeft;
         background: #FFF;
         padding: 20px;
